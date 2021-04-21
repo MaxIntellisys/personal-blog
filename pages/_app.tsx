@@ -1,5 +1,7 @@
 import "../styles/globals.css";
+// import "tailwindcss/tailwind.css";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -7,6 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <NavBar />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function NavBar() {
     return (
-        <nav>
+        <nav className="container mx-auto p-8 flex justify-between border-2 border-black">
             <h3>Max Sierra</h3>
             <div>
                 <Link href="/"><a>Home</a></Link>
