@@ -1,16 +1,12 @@
-import "../styles/globals.css";
-// import "tailwindcss/tailwind.css";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import "../styles/globals.css"
+import Layout from "../components/Layout";
 import { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <Component {...pageProps} />
-      <Footer />
-    </>
+    </Layout>
   );
 }
 
