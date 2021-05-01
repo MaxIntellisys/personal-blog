@@ -1,6 +1,15 @@
-import Meta from "../components/Meta";
+import Meta from "@components/Meta";
+import { useEffect } from 'react'
 
 export default function Home() {
+
+  useEffect(() => {
+    fetch("/api/blog")
+      .then(data => data.json())
+      .then(console.log);
+    
+  }, [])
+
   return (
     <main className="container mx-auto px-4 border-4 border-indigo-600">
       <Meta title="" />

@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 export default function NavBar() {
@@ -19,7 +18,7 @@ export default function NavBar() {
         <Link href="/guides">
           <a className="bg-gray-100 px-4 py-2 rounded-md font-semibold">Guides</a>
         </Link>
-        <Link href="/Projects">
+        <Link href="/projects">
           <a className="bg-gray-100 px-4 py-2 rounded-md font-semibold">Projects</a>
         </Link>
         <Link href="/me">

@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -8,7 +7,7 @@ export default function Footer() {
         <Link href="/">
           <a className="bg-gray-300 p-2 rounded-lg shadow-lg">Home</a>
         </Link>
-        <Link href="/Projects">
+        <Link href="/projects">
           <a className="bg-gray-300 p-2 rounded-lg shadow-lg">Projects</a>
         </Link>
         <Link href="/me">
@@ -17,17 +16,17 @@ export default function Footer() {
       </nav>
       <nav className="flex justify-between items-center border-2 border-black w-52 min-w-max">
         <a href="https://www.linkedin.com/in/maximo-sierra/" target="_blank">
-          <img className="w-10"src="images/linkedin.png"/>
+          <img className="w-10" src="images/linkedin.png" />
         </a>
         <a href="https://github.com/MaxIntellisys" target="_blank">
-          <img className="w-20"src="images/github.png"/>
+          <img className="w-20" src="images/github.png" />
         </a>
         <a href="https://twitter.com/maxsierra16" target="_blank">
-          <img className="w-10"src="images/twitter.png"/>
+          <img className="w-10" src="images/twitter.png" />
         </a>
       </nav>
       <small className="justify-self-end text-gray-600">
-        Max Sierra - {new Date().getFullYear()}
+        &#169; {new Date().getFullYear()} Max Sierra. All rights reserved.
       </small>
     </footer>
   );
