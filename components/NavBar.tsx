@@ -1,9 +1,7 @@
 import Link from "next/link";
-import useDarkMode from "../hooks/useDarkMode";
-import DarkModeStyles from "./DarkModeStyles";
+import DarkModeBtn from "./DarkModeBtn";
 
 export default function NavBar() {
-  const [darkMode, toggleDarkMode] = useDarkMode();
   return (
     <nav className="container font-mono mx-auto p-5 flex flex-col sm:flex-row justify-between items-center border-2 border-black">
       <Link href="/">
@@ -35,13 +33,7 @@ export default function NavBar() {
         </Link>
       </div>
 
-      <button
-        className="bg-gray-100 p-3 rounded-full outline-none"
-        onClick={toggleDarkMode}
-      >
-        {darkMode ? "☀" : "🌙"}
-      </button>
-      <DarkModeStyles darkMode={darkMode} />
+      <DarkModeBtn />
     </nav>
   );
 }
