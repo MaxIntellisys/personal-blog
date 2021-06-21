@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -15,13 +15,13 @@ export default function Footer() {
         </Link>
       </nav>
       <nav className="flex justify-between items-center border-2 border-black w-52 min-w-max">
-        <a href="https://www.linkedin.com/in/maximo-sierra/" target="_blank">
+        <a href="https://www.linkedin.com/in/maximo-sierra/" target="_blank" rel="noreferrer">
           <img className="w-10" src="images/linkedin.png" />
         </a>
-        <a href="https://github.com/MaxIntellisys" target="_blank">
+        <a href="https://github.com/MaxIntellisys" target="_blank" rel="noreferrer">
           <img className="w-20" src="images/github.png" />
         </a>
-        <a href="https://twitter.com/maxsierra16" target="_blank">
+        <a href="https://twitter.com/maxsierra16" target="_blank" rel="noreferrer">
           <img className="w-10" src="images/twitter.png" />
         </a>
       </nav>

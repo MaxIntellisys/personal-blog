@@ -1,15 +1,15 @@
-import useDarkMode from "../hooks/useDarkMode";
-import DarkModeStyles from "./DarkModeStyles";
+import useDarkMode from '../hooks/useDarkMode';
+import DarkModeStyles from './DarkModeStyles';
 
 const animateBtn = (element: HTMLDivElement, darkMode: boolean) => {
   if (darkMode) {
-    element.style.transition = "all 0.45s ease-in-out";
-    element.style.transform = "translatey(25px)";
-    element.style.background = "darkblue";
+    element.style.transition = 'all 0.45s ease-in-out';
+    element.style.transform = 'translatey(25px)';
+    element.style.background = 'darkblue';
   } else {
-    element.style.transition = "all 0.45s ease-in-out";
-    element.style.transform = "translatey(-25px)";
-    element.style.background = "#7ac0f9";
+    element.style.transition = 'all 0.45s ease-in-out';
+    element.style.transform = 'translatey(-25px)';
+    element.style.background = '#7ac0f9';
   }
 };
 
@@ -51,8 +51,8 @@ export default function DarkModeBtn() {
           padding: 10px;
           font-size: 24px;
           z-index: -1;
-          background: ${darkMode ? "#7ac0f9" : "darkblue"};
-          transform: ${darkMode ? "translatey(-25px)" : "translatey(25px)"};
+          background: ${darkMode ? '#7ac0f9' : 'darkblue'};
+          transform: ${darkMode ? 'translatey(-25px)' : 'translatey(25px)'};
         }
 
         .sun {

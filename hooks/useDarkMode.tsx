@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export default function useDarkMode(): [boolean, () => void] {
   const [darkMode, setDarkMode] = useState(false);
@@ -6,9 +6,9 @@ export default function useDarkMode(): [boolean, () => void] {
   const setTheme = (value: boolean) => {
     setDarkMode(value);
     if (value) {
-      window.localStorage.setItem("localtheme", "dark");
+      window.localStorage.setItem('localtheme', 'dark');
     } else {
-      window.localStorage.setItem("localtheme", "light");
+      window.localStorage.setItem('localtheme', 'light');
     }
   };
 
@@ -17,8 +17,8 @@ export default function useDarkMode(): [boolean, () => void] {
   };
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem("localtheme");
-    if (!localTheme || localTheme == "light") {
+    const localTheme = window.localStorage.getItem('localtheme');
+    if (!localTheme || localTheme == 'light') {
       setTheme(false);
     } else {
       setTheme(true);

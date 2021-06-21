@@ -1,9 +1,9 @@
-import Meta from "@components/Meta";
-import { useEffect } from "react";
+import Meta from '@components/Meta';
+import { useEffect } from 'react';
 
 export default function Home() {
   useEffect(() => {
-    fetch("/api/blog")
+    fetch('/api/blog')
       .then((data) => data.json())
       .then(console.log);
   }, []);

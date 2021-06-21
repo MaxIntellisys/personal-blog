@@ -1,5 +1,5 @@
-import Link from "next/link";
-import DarkModeBtn from "./DarkModeBtn";
+import Link from 'next/link';
+import DarkModeBtn from './DarkModeBtn';
 
 export default function NavBar() {
   return (
