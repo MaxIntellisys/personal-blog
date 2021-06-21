@@ -36,13 +36,13 @@ jobs:
                   node-version: 14.x
 
             - name: 🧰 Install dependencies
-              run: npm run install
+              run: npm install
 
             - name: 📦 Build project
               run: npm run build --if-present
 
-            - name: 🧹 Run lint
-              run: npm run lint
+            # - name: 🧹 Run lint
+            #   run: npm run lint
 
             # - name: 🐛 Run tests
             #   run: npm run test
